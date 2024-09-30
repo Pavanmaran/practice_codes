@@ -1,0 +1,22 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+// Problem: Write a function that counts the number of 1s in the binary representation of an integer.
+// 10
+// eg. 1010
+// ans. 2
+
+int cnt(int inp){
+    int count = 0;
+    while(inp){
+        count += inp&1;
+        inp>>=1;
+    }
+    return count;
+}
+int main() {
+    // Write C code here
+    int result = cnt(11);
+    printf("%d", result);
+
+    return 0;
+}
