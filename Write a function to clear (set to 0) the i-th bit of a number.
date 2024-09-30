@@ -1,0 +1,16 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+// Write a function to clear (set to 0) the i-th bit of a number.
+// return new result 
+int clearbit(int input, int bittoclear){
+    int shifted = ~(1<<bittoclear);
+    int res = input&shifted;
+    return res;
+}
+int main() {
+    // Write C code here
+    int result = clearbit(15,1);
+    printf("%d", result);
+
+    return 0;
+}
