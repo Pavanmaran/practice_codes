@@ -1,0 +1,20 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+// Toggle the i-th Bit of a Number
+// return new result 
+// 1011 
+// 0001
+// XOR
+// 1011
+
+int setBit(int n, int i) {
+    int mask = 1 << i;
+    return n ^ mask;
+}
+int main() {
+    // Write C code here
+    int result = setBit(10,0);
+    printf("%d", result);
+
+    return 0;
+}
